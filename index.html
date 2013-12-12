@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>WebSocket Test</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        var socket = io.connect('http://localhost');
+        socket.on('stdout', function (data) {
+            data = data.replace(/\n/g, '<br>')
+            $(".output").append(data + '<br>');
+
+        });
+
+        socket.on('stderr', function (data) {
+            data = data.replace(/\n/g, '<br>')
+            $(".errors").append(data + '<br>');
+
+        });
+    </script>
+</head>
+
+<body>
+<h2>Standard Output</h2>
+
+<div class="output">
+
+</div>
+
+<h2>Errors</h2>
+
+<div class="errors">
+
+</div>
+
+</body>
+</html>

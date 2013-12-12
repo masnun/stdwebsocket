@@ -1,0 +1,30 @@
+{
+    "name": "stdwebsocket",
+    "version": "0.0.0",
+    "description": "Push the STDOUT and STDERR of a process to websockets",
+    "dependencies": {
+        "socket.io": "~0.9.16"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "stdout",
+        "websocket"
+    ],
+    "author": "Abu Ashraf Masnun <masnun@gmail.com> (http://masnun.me)",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/masnun/stdwebsocket"
+    },
+    "bugs": {
+        "email": "masnun@gmail.com",
+        "url": "http://github.com/masnun/stdwebsocket/issues"
+    },
+    "license": "BSD-2-Clause",
+    "bin": {
+        "stdwebsocket": "main.js"
+    }
+
+}
